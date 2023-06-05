@@ -1,0 +1,47 @@
+<!DCTYPE html>
+<html>
+<head>
+  <title> Trabalhando com Formulario </title>
+</head>
+ 
+ <body>
+ <p> Cadastro </p>
+ <form method="POST" name="cadastro" ACTION="#">
+ <!-- Campos ocultos para config. de envio -->
+ <input type="hiden" name="TO"        value="lucaspirecchia@gmail.com">
+ <input type="hiden" name="FROM"      value="Cadastro feito no site">
+ <input type="hiden" name="SUBJECT"   value="Novo cadastro Realizado">
+ <input type="hiden" name="RESPONDER" value="https://lstecnology.com.br">
+ <!-- Campo solicitado -->
+ <p> Nome </p>
+ <p>
+    <input type="text" name="nome" id="nome" value="Digite seu Nome" size="40" maxlength="50">
+ </p>
+ <p>
+    <input type="text" name="nome2" id="nome2" value="Digite seu Sobrenome" size="40" maxlength="50">
+ </p>
+ 
+ <p> Genero </p>
+	<input type="radio" name="sexo" value="masculino"> Masculino
+	<input type="radio" name="sexo" value="feminino"> Feminino
+	
+ <p> Diga mais sobre voce </p>
+ <p> <textarea name="sobre" cols="50" rows="4" id="sobre"> Digite suas informações </textarea>
+	
+	<p>Você Gosta de </p>
+ <p>
+   <input type="checkbox" name="preferencia" value="Pizza"> Pizza <br>
+   <input type="checkbox" name="preferencia" value="Churrasco"> Churrasco <br>
+   <input type="checkbox" name="preferencia" value="Strogonof"> Strogonof <br>
+   <input type="checkbox" name="preferencia" value="Futebol"> Futebol <br>
+   <input type="checkbox" name="preferencia" value="Basquete"> Basquete <br>
+   <input type="checkbox" name="preferencia" value="Praia"> Praia <br>
+	
+	<p> Digte uma Senha </p>
+ <p> <input type="password" name="senha" id="senha" size="25" maxlength="20">
+	
+	
+	
+ </form>
+ </body>
+ </html>
